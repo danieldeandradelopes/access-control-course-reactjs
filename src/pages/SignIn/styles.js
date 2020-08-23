@@ -30,6 +30,8 @@ export const ContainerLogin = styled.div`
         justify-content: center;
         width:80%;      
     }
+
+  
 `
 
 export const StyledInput = styled.input`
@@ -48,6 +50,16 @@ export const StyledAvatar = styled.img`
     padding: 5px;
     border-style: solid;
     border-color: #75489f;
+
+    @keyframes animationLogin {
+        0%   {width: 100%; height: 250%;}
+        100%   {width: 400%; height: 650%;}
+    }   
+
+    @media(max-width: 800px) {
+        animation-name:${props => props.animate && 'animationLogin'};
+        animation-duration: 1500ms;
+    }
     
 `
 export const ContainerButton = styled.div`
@@ -86,8 +98,8 @@ export const ContainerImage = styled.div`
     background: linear-gradient(60deg, #efc2e0,#75489f);
 
     @keyframes topBar {
-        0%   {background-color:red; top:0px; height: 250px;}
-        100% {background-color:red; top:0px;}
+        0%   {top:0px; height: 250px;}
+        100% {top:0px;}
     }   
 
     @media(max-width: 800px) {
