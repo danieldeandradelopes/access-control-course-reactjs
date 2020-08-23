@@ -86,8 +86,8 @@ export const ContainerImage = styled.div`
     background: linear-gradient(60deg, #efc2e0, #75489f);
 
     @keyframes topBar {
-        0%   {background-color:red; top:0px; height: 250px;}
-        100% {background-color:red; top:0px;}
+        0%   { top:0px; height: 250px;}
+        100% { top:0px;}
     }   
 
     @media(max-width: 800px) {
