@@ -15,7 +15,7 @@ export const Container = styled.div`
     
 `
 
-export const ContentLogin = styled.div`
+export const ContainerLogin = styled.div`
     display: flex;
     flex-direction: column;    
     align-items: center;
@@ -27,7 +27,7 @@ export const ContentLogin = styled.div`
 
     @media(max-width: 800px) {
         justify-content: center;
-        width:80%;
+        width:80%;      
     }
 `
 
@@ -49,27 +49,34 @@ export const StyledAvatar = styled.img`
     border-color: #75489f;
     
 `
+export const ContainerButton = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+`
 
 export const StyledButton = styled.button`
     width: 90%;
     height: 40px;
     margin-top: 10px;
     color: #fff;
-    background-color: #f0027f;
     border-radius: 4px;
-    border: 0px;
+    border: 0px;    
+    background-color: #75489f;
 
     :hover {
         opacity: 0.7;
     }
     
-    :last-child {
+    :first-child {
         margin-top: 5px;
-        background-color: #75489f;
+        background-color: #f0027f;
     }
 
 `
-export const ContentImage = styled.div`
+export const ContainerImage = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,9 +84,18 @@ export const ContentImage = styled.div`
     width: 60%;
     background: linear-gradient(60deg, #efc2e0, #75489f);
 
+    @keyframes topBar {
+        0%   {background-color:red; top:0px; height: 250px;}
+        100% {background-color:red; top:0px;}
+    }   
+
+
     @media(max-width: 800px) {
         height: 70px;
         width: 100%;
+
+        animation-name: topBar;
+        animation-duration: 1s;
     }
 `
 
