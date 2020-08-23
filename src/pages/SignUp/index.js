@@ -8,7 +8,6 @@ export default function SignUp() {
             <Container>
                 <ContainerLogin>
                     <StyledAvatar src="https://cdn.iconscout.com/icon/free/png-512/avatar-372-456324.png" />
-                    <StyledInput type="text" placeholder="Name" />
                     <StyledInput type="email" placeholder="E-mail" />
                     <StyledInput type="password" placeholder="Password" />
                     <StyledInput type="password" placeholder="Confirm Password" />
@@ -16,11 +15,11 @@ export default function SignUp() {
                         <StyledButton>Register</StyledButton>
                         <StyledButton>Cancel</StyledButton>
                     </ContainerButton>
-                    <StyledLink href="#">Já tenho conta!</StyledLink>
+                    <StyledLink to="/sign-in">Já tenho conta!</StyledLink>
                 </ContainerLogin>
                 <ContainerImage>
                     <StyledImage src={SignUpImage} />
-                    <StyledTitle>LOGIN</StyledTitle>
+                    <StyledTitle>REGISTER</StyledTitle>
                 </ContainerImage>
             </Container>
         </>

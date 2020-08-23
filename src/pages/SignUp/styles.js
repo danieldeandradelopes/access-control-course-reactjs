@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
 export const Container = styled.div`    
     width: 100%;
     height: 100%;   
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 
@@ -84,9 +85,17 @@ export const ContainerImage = styled.div`
     width: 60%;
     background: linear-gradient(60deg, #efc2e0, #75489f);
 
+    @keyframes topBar {
+        0%   {background-color:red; top:0px; height: 250px;}
+        100% {background-color:red; top:0px;}
+    }   
+
     @media(max-width: 800px) {
         height: 70px;
         width: 100%;
+
+        animation-name: topBar;
+        animation-duration: 1s;
     }
 `
 
@@ -97,7 +106,7 @@ export const StyledImage = styled.img`
         display: none;
     }
 `
-export const StyledLink = styled.a`
+export const StyledLink = styled(Link)`
     margin-top: 20px;
     color: #75489f;
 
