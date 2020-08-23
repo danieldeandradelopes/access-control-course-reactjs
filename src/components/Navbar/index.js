@@ -18,7 +18,9 @@ export default function Navbar() {
                         </StyledLink>
                     </li>
                     <li>
-                        <StyledButton>Logout</StyledButton>
+                        <StyledLink to="/sign-in">
+                            <StyledButton>Logout</StyledButton>
+                        </StyledLink>
                     </li>
                 </Items>
             </div>
