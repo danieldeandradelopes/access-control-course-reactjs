@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 
 export const Container = styled.div`    
@@ -82,13 +83,12 @@ export const ContainerImage = styled.div`
     justify-content: center;
     height: 100%;
     width: 60%;
-    background: linear-gradient(60deg, #efc2e0, #75489f);
+    background: linear-gradient(60deg, #efc2e0,#75489f);
 
     @keyframes topBar {
         0%   {background-color:red; top:0px; height: 250px;}
         100% {background-color:red; top:0px;}
     }   
-
 
     @media(max-width: 800px) {
         height: 70px;
@@ -106,7 +106,7 @@ export const StyledImage = styled.img`
         display: none;
     }
 `
-export const StyledLink = styled.a`
+export const StyledLink = styled(Link)`
     margin-top: 20px;
     color: #75489f;
 

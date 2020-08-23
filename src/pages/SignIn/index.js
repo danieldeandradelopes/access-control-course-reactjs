@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container, ContainerLogin, ContainerImage, ContainerButton, StyledAvatar, StyledButton, StyledInput, StyledImage, StyledLink, StyledTitle } from './styles'
 import SignInImage from '../../assets/signin.png'
 
 export default function SignIn() {
+
+
     return (
         <>
             <Container>
@@ -14,7 +16,7 @@ export default function SignIn() {
                         <StyledButton>Login</StyledButton>
                         <StyledButton>Cancel</StyledButton>
                     </ContainerButton>
-                    <StyledLink href="#">Não tem conta? Clique aqui!</StyledLink>
+                    <StyledLink to="/sign-up">Não tem conta? Clique aqui!</StyledLink>
                 </ContainerLogin>
                 <ContainerImage>
                     <StyledImage src={SignInImage} />
